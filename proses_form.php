@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
-    $phone = $_POST["tell"];
+    $phone = $_POST["phone"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 

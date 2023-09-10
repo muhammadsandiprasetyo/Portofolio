@@ -144,26 +144,35 @@
     <!--Gallery Akhir-->
 
     <!--contact Awal-->
-    <section class="contact" id="contact"><h2 class="text-center">Contact</h2>
-       <div class="row"> 
-          <div class="col-2">
-           
+  <section class="contact" id="contact">
+      <h2 class="text-center">Contact</h2>
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <form id="contact-form" action="proses_form.php" method="POST">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="phone" class="form-label">Telephone</label>
+                          <input type="tel" class="form-control" id="phone" name="phone" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success" id="submit-btn">Send</button>
+                  </form>
+              </div>
           </div>
-          <div class="col-8" >
-            <form id="contact-form" method="POST"></form>
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name input!"> 
-                    <label for="exampleFormControlInput1" class="form-label">Tellephone</label>
-                    <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Input phone number!">    
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  <button type="submit" id="submit-btn">Send</button>
-            </form>
-            <div id="response"></div>
-          </div>
-        </div>
+      </div>
+</section>
+
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,224L26.7,229.3C53.3,235,107,245,160,256C213.3,267,267,277,320,256C373.3,235,427,181,480,165.3C533.3,149,587,171,640,181.3C693.3,192,747,192,800,202.7C853.3,213,907,235,960,218.7C1013.3,203,1067,149,1120,138.7C1173.3,128,1227,160,1280,181.3C1333.3,203,1387,213,1413,218.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z" speechify-initial-font-family="GTWalsheim, system-ui, sans-serif" speechify-initial-font-size="16px" style="font-family: GTWalsheim, system-ui, sans-serif; font-size: 16px;"></path></svg>
     </section>
 

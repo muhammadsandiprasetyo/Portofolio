@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
-  const submitBtn = document.getElementById('submit-btn');
+  const form = document.getElementById('contact-form'); // Mengambil elemen form dengan ID 'contact-form'
   const responseDiv = document.getElementById('response');
 
   form.addEventListener('submit', function (event) {
