@@ -1,0 +1,12 @@
+.jumbotron {
+  padding: 2rem 1rem;
+}
+/* Di dalam style.css atau dalam elemen <style> di dalam <head> */
+body {
+  overflow-x: hidden; /* Ini akan menghilangkan scroll bar horizontal pada seluruh halaman */
+}
+
+/* Atau jika Anda ingin mengaturnya hanya pada elemen tertentu, misalnya elemen dengan class "content" */
+.content {
+  overflow-x: hidden;
+}
