@@ -10,3 +10,9 @@ body {
 .content {
   overflow-x: hidden;
 }
+section {
+  padding-top: 5rem;
+}
+.footer a {
+  text-decoration: none;
+}
