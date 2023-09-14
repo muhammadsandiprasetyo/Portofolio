@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Proses pesan Anda di sini, seperti mengirim email atau menyimpan ke database
 
     // Contoh pengiriman email
-    $to = "hafizmuhammad930@email.com";
+    $to = "hafizmuhammad930@gmail.com";
     $subject = "Pesan dari $name";
     $headers = "From: $email";
     $message = "Telepon: $phone\n\n$message";

@@ -8,8 +8,7 @@
 
     <!--My CSS-->
     <link rel="stylesheet" href="style.css" />
-    <!--My Js-->
-    <script src="script.js"></script>
+    
   </head>
   <body id="#home">
     
@@ -139,6 +138,25 @@
           </div>
         </div>
     </div>
+
+    <div class="card-group expand-xs" style="background-color: rgb(63, 131, 117);" id="gallery">
+        <div class="card">
+              <img src="img/a.jpg" class="card-img-top" alt="dasda">
+        </div>
+        <div class="card">
+              <img src="img/b.jpg" class="card-img-top" alt="sdaddadada">
+          </div>
+       <div class="card">
+            <img src="img/c.jpg" class="card-img-top" alt="sdadada">
+        </div>
+          <div class="card">
+              <img src="img/d.jpg" class="card-img-top" alt="sdadada">
+          </div>
+          <div class="card">
+              <img src="img/e.jpg" class="card-img-top" alt="saasaa">
+          </div>
+    </div>
+
   </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3f8375" fill-opacity="1" d="M0,32L12.6,37.3C25.3,43,51,53,76,90.7C101.1,128,126,192,152,213.3C176.8,235,202,213,227,181.3C252.6,149,278,107,303,112C328.4,117,354,171,379,170.7C404.2,171,429,117,455,128C480,139,505,213,531,208C555.8,203,581,117,606,106.7C631.6,96,657,160,682,170.7C707.4,181,733,139,758,128C783.2,117,808,139,834,128C858.9,117,884,75,909,96C934.7,117,960,203,985,240C1010.5,277,1036,267,1061,224C1086.3,181,1112,107,1137,85.3C1162.1,64,1187,96,1213,101.3C1237.9,107,1263,85,1288,117.3C1313.7,149,1339,235,1364,266.7C1389.5,299,1415,277,1427,266.7L1440,256L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z" speechify-initial-font-family="GTWalsheim, system-ui, sans-serif" speechify-initial-font-size="16px" style="font-family: GTWalsheim, system-ui, sans-serif; font-size: 16px;"></path></svg>
     <!--Gallery Akhir-->
@@ -149,29 +167,36 @@
       <div class="container">
           <div class="row">
               <div class="col-12">
-                  <form id="contact-form" action="proses_form.php" method="POST">
+                <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                  <strong>Thanks you!</strong> your message has been received.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                  <form name="contact-form">
                       <div class="mb-3">
                           <label for="name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="name" name="name" required>
+                          <input type="text" class="form-control" id="name" name="Nama" required>
                       </div>
                       <div class="mb-3">
-                          <label for="phone" class="form-label">Telephone</label>
-                          <input type="tel" class="form-control" id="phone" name="phone" required>
+                          <label for="phone" class="form-label">phone</label>
+                          <input type="tel" class="form-control" id="phone" name="Phone" required>
                       </div>
                       <div class="mb-3">
                           <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
+                          <input type="email" class="form-control" id="email" name="Email" required>
                       </div>
                       <div class="mb-3">
-                          <label for="message" class="form-label">Message</label>
-                          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                          <label for="message" class="form-label">Message <i class="bi bi-heart-fill"></i></label>
+                          <textarea class="form-control" id="message" name="Pesan" rows="4" required></textarea>
                       </div>
-                      <button type="submit" class="btn btn-success" id="submit-btn">Send</button>
+                      <button type="submit" class="btn btn-success btn-kirim" id="submit-btn">Send</button>
+                      <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                      <span role="status">Loading...</span>
                   </form>
               </div>
           </div>
       </div>
-</section>
+  </section>
 
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,224L26.7,229.3C53.3,235,107,245,160,256C213.3,267,267,277,320,256C373.3,235,427,181,480,165.3C533.3,149,587,171,640,181.3C693.3,192,747,192,800,202.7C853.3,213,907,235,960,218.7C1013.3,203,1067,149,1120,138.7C1173.3,128,1227,160,1280,181.3C1333.3,203,1387,213,1413,218.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z" speechify-initial-font-family="GTWalsheim, system-ui, sans-serif" speechify-initial-font-size="16px" style="font-family: GTWalsheim, system-ui, sans-serif; font-size: 16px;"></path></svg>
     </section>
@@ -182,11 +207,39 @@
 
     <!--Footer Awal-->
    <footer class="footer bg-dark pb-5 text-center text-white">
-          <h5>Copyright.2023 create with love. by <a class="text-white fw-bold" href="https://www.instagram.com/_hafiz.zz/"> MuhammadHafiz</a></h5>
+          <h5>create with <i class="bi bi-heart-fill bi-danger"></i>. by <a class="text-white fw-bold" href="https://www.instagram.com/_hafiz.zz/"> MuhammadHafiz</a></h5>
           <p class="text-end"> Follow us FB and Ig</p>
     </footer>
     <!--Footer Akhor-->
      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwbA50eutcGbKYK8ODZVdMD6hnNgTJbNxNYBlNZJEJBOsUNHSm7U9sxPhlBhNeAxKJi/exec';
+          const form = document.forms['contact-form'];
+          const btnKirim = document.querySelector('.btn-kirim');
+          const btnLoading = document.querySelector('.btn-loading');
+          const myAlert = document.querySelector('.my-alert');
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            //ketika submit diklik
+            // tampilkan tombol loading, hilangkan tombol kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                //hilangkan tombol loading, tampilkan tombol kirim
+                 btnLoading.classList.toggle('d-none');
+                 btnKirim.classList.toggle('d-none');
+                //tampilkan alert
+                myAlert.classList.toggle('d-none')
+                //reset formnya
+                form.reset();
+                console.log('Success!', response)})
+                
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
   </body>
 </html>
