@@ -17,5 +17,8 @@ section {
   text-decoration: none;
 }
 .footer a {
-  color: rgb(255, 255, 255);
+  color: rgb(171, 165, 165);
+}
+.footer p {
+  color: rgb(171, 165, 165);
 }
