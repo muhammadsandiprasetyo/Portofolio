@@ -16,3 +16,6 @@ section {
 .footer a {
   text-decoration: none;
 }
+.footer a {
+  color: rgb(255, 255, 255);
+}

@@ -1,23 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form'); // Mengambil elemen form dengan ID 'contact-form'
-  const responseDiv = document.getElementById('response');
+document.addEventListener('click', function (event) {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Mencegah halaman me-reload saat form disubmit
+  // Periksa apakah navbar terbuka
+  const isNavbarOpen = navbarCollapse.classList.contains('show');
 
-    const formData = new FormData(form);
-
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'proses_form.php', true);
-    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        const response = JSON.parse(xhr.responseText);
-        responseDiv.textContent = response.message;
-      }
-    };
-
-    xhr.send(formData);
-  });
+  // Periksa apakah yang diklik adalah di luar navbar dan toggle navbar
+  if (isNavbarOpen && !navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+    // Tutup navbar
+    navbarToggler.click();
+  }
 });
